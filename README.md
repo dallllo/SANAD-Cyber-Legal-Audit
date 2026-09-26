@@ -36,14 +36,16 @@
 
 ## 📸 لقطات الشاشة والواجهة (Screenshots)
 
+## 🟡 loading تحميل
+![Non Compliant Audit](assets/loading.jpg)
+---
+
 ### 🔴 فحص عقد غير ممتثل (رصد المخالفات والصياغة البديلة):
 ![Non Compliant Audit](assets/dashboard_non_compliant.png)
-
 ---
 
 ### 🟢 فحص عقد ممتثل (نسبة امتثال عالية):
 ![Compliant Audit](assets/dashboard_compliant.png)
-
 ---
 
 ## 🚀 طريقة التشغيل المحلي (Getting Started)
