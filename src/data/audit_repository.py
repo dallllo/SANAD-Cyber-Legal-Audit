@@ -35,11 +35,9 @@ class AuditRepository:
 
         # 3. إرسال الطلب لـ OpenRouter API
         headers = {"Authorization": f"Bearer {Config.OPENROUTER_API_KEY}",
-            "HTTP-Referer": "http://localhost:8501", # لتحديد المصدر لـ OpenRouter
+            "HTTP-Referer": "http://localhost:8501", 
             "X-Title": "SANAD Compliance Audit",
             "Content-Type": "application/json"
-            # "Authorization": f"Bearer {Config.OPENROUTER_API_KEY}",
-            # "Content-Type": "application/json"
         }
 
         payload = {
@@ -51,7 +49,6 @@ class AuditRepository:
         
         if response.status_code == 200:
             content = response.json()['choices'][0]['message']['content']
-            # استخراج الـ JSON من إجابة النموذج
             clean_json = content[content.find('{'):content.rfind('}')+1]
             data = json.loads(clean_json)
             
